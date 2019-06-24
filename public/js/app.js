@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (event) => {
                messageOne.innerHTML = `Location: ${data.location}`;
                messageTwo.innerHTML = `Forecast: ${data.forecast}
                <br>Temperature: ${data.temperature} &#8451
-               <br>Chance of Raining: ${data.precipProbability}% `; 
+               <br>Chance of Raining: ${data.precipProbability * 100}% `; 
             }
         })
     })
