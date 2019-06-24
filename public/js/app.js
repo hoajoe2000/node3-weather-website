@@ -19,7 +19,8 @@ weatherForm.addEventListener('submit', (event) => {
             } else {
                messageOne.innerHTML = `Location: ${data.location}`;
                messageTwo.innerHTML = `Forecast: ${data.forecast}
-               <br>Temperature: ${data.temperature} &#8451`; 
+               <br>Temperature: ${data.temperature} &#8451
+               <br>Chance of Raining: ${data.precipProbability}% `; 
             }
         })
     })

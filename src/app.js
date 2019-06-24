@@ -48,7 +48,9 @@ app.get('/weather',(req,res)=>{
                 forecast: summary,
                 location,
                 address: req.query.address,
-                temperature
+                temperature,
+                precipProbability
+
             })
             // console.log(location)
             // console.log(temperature)

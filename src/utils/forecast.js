@@ -11,7 +11,7 @@ const forecast = (latitude,longtitude,callback) =>{
             callback('Unvalid coordination',undefined)
         }
         else{
-            
+            console.log(body)
             callback(undefined,{
                 temperature: body.currently.temperature,
                 precipProbability: body.currently.precipProbability,
